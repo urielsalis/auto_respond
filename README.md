@@ -1,14 +1,14 @@
 
-Modmail Auto-Responder Bot
+## Modmail Auto-Responder Bot
 
 This script creates a Reddit bot that auto-responds to Modmail messages that contain specific keywords in the message subject or body. It utilizes the Python Reddit API Wrapper (PRAW) to interact with Reddit's API.
 Features
 
-    The bot operates on a specific list of subreddits.
-    It responds to Modmail messages containing any of the keywords defined in a list.
-    The bot archives the conversation after sending the response.
-    It records which Modmail conversations it has replied to, to avoid sending multiple responses to the same conversation.
-    If a Modmail message comes from an admin, the bot will send a private message to every moderator of the subreddit, notifying them of the admin Modmail.
+The bot operates on a specific list of subreddits.
+It responds to Modmail messages containing any of the keywords defined in a list.
+The bot archives the conversation after sending the response.
+It records which Modmail conversations it has replied to, to avoid sending multiple responses to the same conversation.
+If a Modmail message comes from an admin, the bot will send a private message to every moderator of the subreddit, notifying them of the admin Modmail.
 
 Requirements
 
