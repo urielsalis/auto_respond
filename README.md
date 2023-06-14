@@ -17,40 +17,39 @@ Requirements
 
 To install PRAW, run:
 
-bash
 
-pip install praw
+
+    pip install praw
 
 Usage
 
-    Clone the repository:
+Clone the repository:
 
-bash
 
-git clone https://github.com/yourusername/auto_respond.git
-cd auto_respond
+    git clone https://github.com/yourusername/auto_respond.git
+    cd auto_respond
 
-    You need to have a config.py file in your project directory with your Reddit app credentials:
+ You need to have a config.py file in your project directory with your Reddit app credentials:
 
-python
 
-client_id = 'your_client_id'
-client_secret = 'your_client_secret'
-refresh_token = 'your_refresh_token'
 
-    Run the script:
+    client_id = 'your_client_id'
+    client_secret = 'your_client_secret'
+    refresh_token = 'your_refresh_token'
 
-bash
+Run the script:
 
-python3 auto_respond.py
+
+
+    python3 auto_respond.py
 
 Configuring the Bot
 
 You can customize the bot's behavior by modifying the following variables in the auto_respond.py script:
 
-    allowed_subreddits: List of subreddits the bot should operate on.
-    keywords: List of keywords the bot should respond to.
-    main_response_message: The message the bot should send in response to matching Modmail messages.
+ allowed_subreddits: List of subreddits the bot should operate on.
+ keywords: List of keywords the bot should respond to.
+ main_response_message: The message the bot should send in response to matching Modmail messages.
 
 Contributing
 
