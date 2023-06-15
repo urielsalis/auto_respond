@@ -10,7 +10,8 @@ reddit = praw.Reddit(
 	client_id = config.client_id,
 	client_secret = config.client_secret,
 	user_agent="modmail_auto_responder_v0.1 fork by u/urielsalis",
-	refresh_token =config.refresh_token,
+    	password=config.password,
+    	username=config.username,
 )
 
 # Define the list you want this to operate on.  A modmail conversation stream fetches ALL subreddits
