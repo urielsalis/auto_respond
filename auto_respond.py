@@ -44,12 +44,12 @@ main_response_message = """Hello /u/{author},
 The subreddit r/Minecraft is currently set to private mode in protest of Reddit's changes to the API and will not be public again until Reddit Inc. accommodates for the Reddit community's needs. This decision was not taken lightly, but it was [voted upon by our community](https://imgur.com/qYbUaWT.png), who decided that this would be the right thing to do.
 You can read more about this on r/Save3rdPartyApps or in [this topic](https://redd.it/1476ioa).
 
-In the meantime, here are some links you may need:  
+In the meantime, here are some links you may need:
 
 **Information/Support:**
 - [Minecraft Support, if you have problems with your account](https://help.minecraft.net/hc/)
 - [Minecraft Community Support Discord server, if you need tech support involving the game itself](https://discord.gg/58Sxm23)
-- [Minecraft Wiki, if you have a question about the game or are looking at how rare is a pink sheep](https://minecraft.fandom.com/)  
+- [Minecraft Wiki, if you have a question about the game or are looking at how rare is a pink sheep](https://minecraft.fandom.com/)
 - [Minecraft Bug Tracker, if you want to see if something in the game is normal or not](https://bugs.mojang.com/)
 
 **Other Minecraft social platforms:**
@@ -60,7 +60,6 @@ Best regards,
 The r/Minecraft Team"""
 
 processed_mail = set()
-
 
 # Begin the main function of the bot.  The bot will need to be interrupted manually
 while True:
