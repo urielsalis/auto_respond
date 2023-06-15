@@ -40,6 +40,9 @@ In the meantime, here are some links you may need:
 Best regards,
 The r/Minecraft Team"""
 
+processed_mail = []	
+
+
 # Begin the main function of the bot.  The bot will need to be interrupted manually
 while True:
     try:
@@ -52,7 +55,7 @@ while True:
                 continue  # If not, skip the rest of this loop and move to the next conversation
          
             # Check if we've already processed this modmail.
-            if conv.state != "archived":
+            if conv.id not in processed_mail:
                 # Grab the subject of the first message in the conversation.
                 modmail_subject = conv.subject.lower()
 
@@ -63,7 +66,7 @@ while True:
                 # Check if the conversation started less than 24 hours ago
                 if arrow.get(conv.last_updated) < arrow.utcnow().shift(hours=-24):
                     continue
-
+		
                 # Get the body of theoriginal message
                 original_message = conv.messages[0].body_markdown.lower()
 
@@ -73,6 +76,7 @@ while True:
                     # Reply and archive the message with the preset response, hide the username of the sender.
                     conv.reply(body=response_message, author_hidden=True)
                     conv.archive()
+                    processed_mail.append(conv.id)
                     # Add the id of the conversation to a list so it won't be checked again.
                     print(f"Replied to message ID {conv.id} from user {conv.user.name} with the preset response\n")
                  
