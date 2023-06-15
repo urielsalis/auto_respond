@@ -22,7 +22,7 @@ keywords = ['request to join', 'let me in', 'access', 'member', 'private', 'blac
 # Define the auto-response
 main_response_message ="""Hello /u/{author},
 
-The subreddit r/Minecraft is currently set to private mode in protest of Reddit's changes to the API and will not be public again until Reddit Inc. accommodates for the Reddit community's needs. This decision was not taken lightly, but it was [voted upon by our community](https://screenshot_of_poll_result_goes_here.xyz), who decided that this would be the right thing to do.
+The subreddit r/Minecraft is currently set to private mode in protest of Reddit's changes to the API and will not be public again until Reddit Inc. accommodates for the Reddit community's needs. This decision was not taken lightly, but it was [voted upon by our community](https://imgur.com/qYbUaWT.png), who decided that this would be the right thing to do.
 You can read more about this on r/Save3rdPartyApps or in [this topic](https://redd.it/1476ioa).
 
 In the meantime, here are some links you may need:  
