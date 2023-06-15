@@ -16,7 +16,7 @@ reddit = praw.Reddit(
 allowed_subreddits = ["minecraft"]
 
 # Define the list of keywords for the auto-respond trigger
-keywords = ['request to join','let me in', 'access', 'member', 'private', 'blackout', 'dark', 'closed', 'join', 'shutdown,']
+keywords = ['request to join', 'let me in', 'access', 'member', 'private', 'blackout', 'dark', 'closed', 'join', 'shutdown', 'protest', 'api', 'third party', '3rd party', 'spez', 'apollo', 'reddit is fun']
 
 # Define the auto-response
 main_response_message ="""Hello /u/{author},
