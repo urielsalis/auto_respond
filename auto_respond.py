@@ -1,3 +1,4 @@
+import arrow
 import praw
 import time
 import requests
@@ -57,6 +58,10 @@ while True:
 
                 # Check if the conversation only has the original message so the bot doesn't reply to messages further in the chain.
                 if len(conv.messages) != 1:
+                    continue
+                
+                # Check if the conversation started less than 24 hours ago
+                if arrow.get(conv.last_updated) < arrow.utcnow().shift(hours=-24):
                     continue
 
                 # Get the body of theoriginal message
